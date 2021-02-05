@@ -4,8 +4,7 @@
 
 """Cmd= `.zombie`
 Usage: Searches for deleted accounts in a groups and channels.
-Use .zombies clean to remove deleted accounts from the groups and channels.
-\nPorted by ©[NIKITA](t.me/kirito6969) and ©[EYEPATCH](t.me/NeoMatrix90)"""
+Use .zombies clean to remove deleted accounts from the groups and channels."""
 
 #
 from asyncio import sleep
@@ -51,7 +50,7 @@ UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 @telebot.on(admin_cmd(pattern="zombies(?: |$)(.*)", outgoing=True))
 @telebot.on(sudo_cmd(pattern=f"zombies", allow_sudo=True))
 async def rm_deletedacc(show):
-    """ For .zombies command, list all the ghost/deleted/zombie accounts in a chat. """
+    """. zombies command, list all the ghost/deleted/zombie accounts in a chat. """
 
     con = show.pattern_match.group(1).lower()
     del_u = 0
