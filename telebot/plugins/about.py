@@ -21,7 +21,7 @@ async def _(event):
     # input_str = event.pattern_match.group(1)
     # if input_str == "Visit this page to know more about TeleBot.":
     await eor(event, "Thanks")
-    animation_chars = ["**TeleBot**", "[More Info](https://telegra.ph/TeleBot-07-08)"]
+    animation_chars = ["**VENOM'S BOT**"]
 
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
