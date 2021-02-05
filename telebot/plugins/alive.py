@@ -54,7 +54,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TeleBotSupport"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@OFFICIALTEAMERROR"
 
 
 @telebot.on(admin_cmd(outgoing=True, pattern="alive"))
@@ -67,20 +67,20 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        tele = f"**Welcome To TeleBot **\n\n"
+        tele = f"**Welcome To VENOM'S BOT**\n\n"
         tele += f"`{CUSTOM_ALIVE}`\n\n"
         tele += (
             f"{telemoji} **Telethon version**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
         )
-        tele += f"{telemoji} **TeleBot Version**: `{telever}`\n"
-        tele += f"{telemoji} **More Info**: @TeleBotSupport\n"
+        tele += f"{telemoji} **VENOM Bot Version**: `{telever}`\n"
+        tele += f"{telemoji} **More Info**: @OFFICIALTEERROR\n"
         tele += f"{telemoji} **Sudo** : `{sudo}`\n"
         tele += f"{telemoji} **TeleBot Uptime**: `{uptime}`\n"
         tele += f"{telemoji} **Database Status**: `All OK 👌!`\n"
         tele += (
             f"{telemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
-        tele += "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)"
+        tele += "    [✨ GitHub Repository ✨](https://github.com/NICK-FTW/TeleBot)"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
@@ -101,13 +101,13 @@ async def amireallyalive(alive):
             f"**Welcome To TeleBot **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
             f"{telemoji} **Telethon version**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
-            f"{telemoji} **TeleBot Version**: `{telever}`\n"
-            f"{telemoji} **More Info**: @TeleBotSupport\n"
+            f"{telemoji} **VENOM Bot Version**: `{telever}`\n"
+            f"{telemoji} **More Info**: @OFFICIALTEAMERROR\n"
             f"{telemoji} **Sudo** : `{sudo}`\n"
             f"{telemoji} **TeleBot Uptime**: `{uptime}`\n"
             f"{telemoji} **Database Status**: `All OK 👌!`\n"
             f"{telemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
-            "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)",
+            "    [✨ GitHub Repository ✨](https://github.com/NICK-FTW/TeleBot)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
