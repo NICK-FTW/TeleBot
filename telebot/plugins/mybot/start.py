@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "TeleBot", url="https://github.com/xditya/TeleBot")],
+                                          "TEAM ERROR", url="https://t.me/OFFICIALTEAMERROR")],
                                       [Button.inline(
                                           "Whats this?", data="telebot")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "TeleBot", url="https://github.com/xditya/TeleBot")],
+                                             "TEAM ERROR", url="https://t.me/OFFICIALTEAMERROR")],
                                          [Button.inline(
                                              "Whats this?", data="telebot")]
                                      ]
@@ -117,7 +117,7 @@ async def owner(event):
                                  [Button.inline("Broadcast",
                                                 data="telebroad")],
                                  [Button.url("Support",
-                                             url="https://t.me/TeleBotSupport")]
+                                             url="https://t.me/OFFICIALTEAMERROR")]
                              ])
 
 
@@ -143,7 +143,7 @@ async def logs(event):
         caption="**Heroku** TeleBot Logs",
         buttons=[
             [Button.url("View Online", f"{url}")],
-            [Button.url("Crashed?", "t.me/TeleBotHelpChat")]
+            [Button.url("Crashed?", "t.me/OFFICIALTEAMERROR")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -169,7 +169,7 @@ async def settings(event):
 async def settings(event):
     await event.delete()
     await tgbot.send_message(event.chat_id,
-                             f"This is the personal help bot of {TELE_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
+                             f"This is the personal help bot of {TELE_NAME}. You can contact {TELE_NAME} using this bot if necessary, or if he/she missed out your PM.",
                              buttons=[
                                      [Button.inline(
                                          "Deploy me for yourself", data="deployme")]
@@ -184,7 +184,7 @@ async def settings(event):
                          [(Button.url("Repository", url="https://github.com/xditya/TeleBot")),
                           (Button.url("Deploy", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot%2F&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot"))],
                          [Button.url("Support",
-                                     url="https://t.me/TeleBotSupport")]
+                                     url="https://t.me/OFFICIALTEAMERROR")]
                      ])
 
 
